@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0; /* Added to remove default body margin */
+  padding: 0; /* Added to remove default body padding */
+}
+body {
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  height: 1155px;
+  background: rgba(221,221,221,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.nlinks{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 70px;
+  background: #e3e3e3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link {
+  font-family: Homenaje;
+  font-size: 20px;
+  color: #1e1d1d;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #ccc;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  width: 120px; /* Adjust search input width */
+  background-color: #ccc;
+}
+
+.icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.logo{
+  width: 79px;
+  height: 67px;
+}
+
+
+/* About Section Styles */
+.about-section {
+  position: relative;
+  top: 173px;
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  justify-content: flex-start; /* Align to the start of the container */
+  padding-left: 41px; /* To match image's original left position */
+  gap: 40px; /* Space between image and text */
+}
+
+.about-background-image {
+  width: 562px;
+  height: 562px;
+  background: url("../images/v340_302.png"); /* Ensure this path is correct */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.about-us-content {
+  width: 600px; /* Adjusted from 596px to allow for padding */
+  padding-right: 20px; /* Add some padding to the right */
+}
+
+.about-us-title {
+  color: rgba(42,29,29,1);
+  font-family: Inria Serif;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+  display: block; /* Make it a block element to take full width */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.about-us-description {
+  color: rgba(0,0,0,1);
+  font-family: Kaisei Tokumin;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  height: 256px;
+  background: rgba(239,239,239,1);
+  opacity: 1;
+  position: absolute;
+  bottom: 0px; /* Position at the bottom */
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: flex-start; /* Align items to the top of the footer */
+  padding-top: 33px; /* Adjusted padding to match original top positions */
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Space between sections on wrap */
+}
+
+.footer-logo-text {
+  color: rgba(56,56,56,1);
+  font-family: Judson;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 10px; /* Space below logo */
+}
+
+.footer-address {
+  width: 300px; /* Adjusted width for readability */
+  color: rgba(109,109,109,1);
+  font-family: Abhaya Libre;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.footer-heading {
+  color: rgba(149,149,149,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: rgba(0,0,0,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links block level for better click area */
+  margin-bottom: 5px;
+}
+
+/* Newsletter specific styles */
+.newsletter-input {
+  width: 268px;
+  padding: 8px 10px;
+  border: 1px solid rgba(100,100,100,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  color: rgba(100,100,100,1);
+  background: white;
+  margin-bottom: 10px;
+}
+
+.newsletter-subscribe-button {
+  width: 104px;
+  padding: 8px 10px;
+  background: rgba(109,109,109,1);
+  color: white; /* Text color for button */
+  border: none;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: left;
+  color: rgba(37,37,37,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 59px;
+}
+
+/* Original unnamed divs that were likely placeholders for icons/images */
+.v415_424 {
+  width: 10px;
+  height: 10px;
+  background: url("../images/v415_424.png");
+  opacity: 1;
+  position: absolute;
+  top: 208px;
+  left: 28px;
+  border: 2px solid rgba(0,0,0,1);
+  transform: rotate(-49deg);
+  /* This element seems like a remnant or specific design detail.
+     Its placement needs re-evaluation within the new flexbox layout if it's meant to be visible.
+     I've kept its original styling for now.
+  */
+}

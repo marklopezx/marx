@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Judson&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Homenaje&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gelasio&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/productShippingtDetails.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      /* Basic Styling for the page */
+      body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+      }
+
+      button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+
+      /* Modal Styles */
+      .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1000; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          display: flex; /* Use flexbox to center content */
+          
+      }
+
+      .modal-content {
+          background-color: #fefefe;
+          margin: auto; /* Removed to use flexbox centering */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 725px; /* Could be more specific, e.g., 500px */
+          height: 325px; /* Max width for larger screens */
+          border-radius: 8px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          position: relative; /* For positioning the close button */
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      h2{
+          font-size: 30px;
+          color: rgba(0,0,0,.50);
+
+      }
+      h4{
+          font-size: 20px;
+          color: rgba(0,0,0,.50);
+      }
+
+      .close-button {
+          color: rgba(0,0,0,.50);
+          font-size: 40px;
+          /* font-weight: bold; */
+          position: absolute;
+          top: 10px;
+          left: 20px;
+          cursor: pointer;
+      }
+
+      .close-button:hover,
+      .close-button:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="v406_430">
+        <div class="nlinks">
+            <div>
+              <a href="index.html"><img src="./assets/images/v35_19.png" alt="logo" class="logo"></a>
+            </div>
+            <div>
+              <a href="index.html" class="nav-link">HOME</a>
+              <a href="about.html" class="nav-link">ABOUT</a>
+              <a href="contacts.html" class="nav-link">CONTACTS</a>
+            </div>
+            <div class="nav-icons">
+              <div class="search-box">
+                <input type="text" placeholder="Search..." class="search-input">
+      
+                <i class="fas fa-search search-icon icon"></i>
+              </div>
+              <a href="cart.html" class="icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" fill="currentColor">
+                  <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16l37.9 0c7.6 0 14.2 5.3 15.7 12.8l58.9 288c6.1 29.8 32.3 51.2 62.7 51.2L496 384c8.8 0 16-7.2 16-16s-7.2-16-16-16l-304.8 0c-15.2 0-28.3-10.7-31.4-25.6L152 288l314.6 0c29.4 0 55-20 62.1-48.5L570.6 71.8c5-20.2-10.2-39.8-31-39.8L99.1 32C92.5 13 74.4 0 53.9 0L16 0zm90.1 64l433.4 0L497.6 231.8C494 246 481.2 256 466.5 256l-321.1 0L106.1 64zM168 456a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm80 0a56 56 0 1 0 -112 0 56 56 0 1 0 112 0zm200-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm0 80a56 56 0 1 0 0-112 56 56 0 1 0 0 112z"/>
+                </svg>
+              </a>
+              <a href="./signin.html" class="icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                  <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+      <div class="v406_524"></div>
+      <div class="v406_431"></div>
+      <span class="v406_432">mlopez.</span
+      ><span class="v406_433"
+        >400 Uiversitty Drive Suite 200 Coral Gables, FL 33134 USA</span
+      ><span class="v406_434">Links</span><span class="v406_435">Home</span
+      ><span class="v406_436">Shop</span><span class="v406_437">About</span
+      ><span class="v406_438">Contact</span><span class="v406_439">Help </span
+      ><span class="v406_440">Payment Options</span
+      ><span class="v406_441">Returns</span
+      ><span class="v406_442">Privacy Policies</span
+      ><span class="v406_443">Newsletter</span
+      ><span class="v406_444">Enter Your Email Address</span
+      ><span class="v406_445">Subscribe</span>
+      <div class="name"></div>
+      <div class="name"></div>
+      <div class="name"></div>
+      <span class="v406_449">2025 All rights reserved</span>
+      <!-- <div class="v406_450"></div> -->
+      <!-- <span class="v406_451">CONTACTS</span
+      ><span class="v406_452">HOME</span
+      ><span class="v406_453">ABOUT</span> -->
+      <!-- <div class="v406_454"></div> -->
+      <div class="name"></div>
+      <!-- <div class="v406_456"></div> -->
+      <!-- <div class="v406_457"><div class="v406_458"></div></div> -->
+      <div class="v406_523"></div>
+      <span class="v406_527">Retro Patchwork Hipster</span>
+      <div class="v406_528"></div>
+      <div class="v406_532"></div>
+      <div class="v406_526"></div>
+      <span class="v407_215">Shipping & Details</span>
+      <label for="name" class="v407_221">Name</label>
+      <input type="text" id="name" class="v407_216_input" />
+
+      <label for="number" class="v407_226">Number</label>
+      <input type="text" id="number" class="v407_220_input" />
+
+      <label for="address" class="v407_225">Address</label>
+      <input type="text" id="address" class="v407_219_input" />
+
+      <label for="county" class="v407_224">County</label>
+      <input type="text" id="county" class="v407_217_input" />
+
+      <label for="payment" class="v407_223">Payment</label>
+      <input type="text" id="payment" class="v407_218_input" />
+
+      <div class="name"></div>
+      <div class="v407_229"></div>
+      <span class="v407_230" id="openModalBtn">Place Order</span>
+      <div class="v486_255">
+        <a href="javascript:history.back()" style="text-decoration: none;color: #000;font-size: 30px;"> &larr; </a>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Order Placed!!!</h2>
+          <h4>thank you</h4>
+      </div>
+
+  </div>
+
+  <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("openModalBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close-button")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "flex"; // Changed to flex for centering
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal content, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+  </body>
+</html>

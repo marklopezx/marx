@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  height: 1422px;
+  background: rgba(221, 221, 221, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.signin-title {
+  width: 150px;
+  color: rgba(44, 44, 44, 1);
+  position: absolute;
+  top: 211px;
+  left: 602px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+.input-field-id {
+  width: 476px;
+  height: 52px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 273px;
+  left: 422px;
+  border: 2px solid rgba(76, 76, 76, 1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 0.4300000071525574;
+  text-align: left;
+  padding-left: 10px;
+}
+.input-field-password {
+  width: 476px;
+  height: 52px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 366px;
+  left: 421px;
+  border: 2px solid rgba(76, 76, 76, 1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 0.4300000071525574;
+  text-align: left;
+  padding-left: 10px;
+}
+.signin-apple-button {
+  width: 476px;
+  height: 52px;
+  background: rgba(43, 43, 43, 1);
+  opacity: 1;
+  position: absolute;
+  top: 834px;
+  left: 422px;
+  overflow: hidden;
+}
+.social-signin-separator {
+  width: 476px;
+  height: 52px;
+  background: rgba(164, 163, 163, 1);
+  opacity: 1;
+  position: absolute;
+  top: 581px;
+  left: 422px;
+  overflow: hidden;
+}
+.signin-google-button {
+  width: 476px;
+  height: 52px;
+  background: rgba(84, 86, 102, 1);
+  opacity: 1;
+  position: absolute;
+  top: 751px;
+  left: 422px;
+  overflow: hidden;
+}
+.signin-facebook-button {
+  width: 476px;
+  height: 52px;
+  background: rgba(73, 95, 207, 1);
+  opacity: 1;
+  position: absolute;
+  top: 665px;
+  left: 422px;
+  overflow: hidden;
+}
+.create-account-button {
+  width: 476px;
+  height: 52px;
+  background: rgba(56, 56, 56, 1);
+  opacity: 1;
+  position: absolute;
+  top: 445px;
+  left: 420px;
+  overflow: hidden;
+}
+.signin-with-text {
+  width: 121px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 594px;
+  left: 607px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.signin-facebook-text {
+  width: 223px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 677px;
+  left: 564px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.signin-google-text {
+  width: 198px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 762px;
+  left: 579px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.signin-apple-text {
+  width: 184px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 842px;
+  left: 579px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.already-have-account-text {
+  width: 260px;
+  color: rgba(52, 52, 52, 1);
+  position: absolute;
+  top: 946px;
+  left: 564px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.login-text {
+  width: 476px;
+  height: 52px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(43, 43, 43, 1);
+  position: absolute;
+  top: 1006px;
+  left: 422px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+  padding-top: 8px;
+
+}
+.create-account-text {
+  width: 129px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 459px;
+  left: 593px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-align: center;
+}

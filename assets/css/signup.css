@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+}
+.main-container {
+  width: 100%;
+  min-height: 100vh; /* Changed to min-height to allow content to dictate height */
+  background: rgba(221,221,221,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden; /* Be cautious with this if content overflows vertically */
+}
+
+.nlinks{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 70px;
+  background: #e3e3e3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link {
+  font-family: Homenaje;
+  font-size: 20px;
+  color: #1e1d1d;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #ccc;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  width: 120px; /* Adjust search input width */
+  background-color: #ccc;
+}
+
+.icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.logo{
+  width: 79px;
+  height: 67px;
+}
+
+/* Sign-up Panel Styles */
+.signup-panel {
+  width: 100%; /* Keeps it full width */
+  min-height: 903px; /* Set a min-height to maintain overall layout */
+  background: rgba(240,240,240,1);
+  opacity: 1;
+  position: relative; /* Changed from absolute to relative */
+  /* Removed top: 168px; - now it naturally flows after header */
+  left: 0px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  overflow: hidden;
+  margin-top: 100px; /* Added padding to push content down from header */
+  margin-bottom: 80px; /* Padding for spacing at bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  gap: 20px; /* Space between elements */
+}
+
+.profile-icon {
+  width: 70px;
+  height: 70px;
+
+  /* background: rgba(0,0,0,1); */
+  opacity: 1;
+  z-index:1000;
+  /* Removed absolute positioning */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+.create-account-title {
+  width: 162px;
+  color: rgba(0,0,0,1); /* Changed to black for visibility */
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+  margin-bottom: 30px; /* Space below title */
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between form groups */
+  width: 431px; /* Match input width */
+  margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+  position: relative;
+  width: 100%; /* Take full width of the form */
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  height: 40px;
+  padding: 8px 10px;
+  /* background: rgba(255,255,255,1); Changed to white for clarity */
+  opacity: 0.43;
+  border: 2px solid rgba(0,0,0,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  color: rgba(0,0,0,1); /* Slightly darker text for visibility */
+  -webkit-appearance: none; /* Remove default styling for select */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-label {
+  position: absolute;
+  top: -20px; /* Initial position for floating label */
+  left: 0;
+  background: rgba(240,240,240,1); /* Match panel background for 'cutout' effect */
+  padding: 0 5px;
+  color: rgba(0,0,0,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label,
+.form-select:focus + .form-label,
+.form-select:not(:placeholder-shown) + .form-label {
+  top: -12px; /* Move label up on focus/fill */
+  font-size: 16px; /* Shrink label */
+  color: rgba(0,0,0,1);
+  background: rgba(240,240,240,1); /* Ensure background covers the line */
+}
+
+/* Hide default placeholder text visually */
+.form-input::placeholder {
+  color: transparent;
+}
+
+
+.create-account-button {
+  width: 440px; /* Matches original width of the div */
+  height: 58px;
+  background: rgba(121,121,121,1);
+  opacity: 1;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  color: rgba(255,255,255,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px; /* Space above button */
+}
+
+/* Rotate Element (if still needed) */
+.rotate-element {
+  width: 10px;
+  height: 10px;
+  /* background: url("../images/v404_162.png"); */
+  opacity: 1;
+  position: absolute; /* Kept absolute as it appears to be a decorative element */
+  top: 50px;
+  left: 59px;
+  font-size: 25px;
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  height: 256px;
+  background: rgba(239,239,239,1);
+  opacity: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: flex-start; /* Align items to the top of the footer */
+  padding-top: 33px; /* Adjusted padding to match original top positions */
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Space between sections on wrap */
+}
+
+.footer-logo-text {
+  color: rgba(56,56,56,1);
+  font-family: Judson;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 10px; /* Space below logo */
+}
+
+.footer-address {
+  width: 300px; /* Adjusted width for readability */
+  color: rgba(109,109,109,1);
+  font-family: Abhaya Libre;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+
+.footer-heading {
+  color: rgba(149,149,149,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: rgba(0,0,0,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links block level for better click area */
+  margin-bottom: 5px;
+}
+
+/* Newsletter specific styles */
+.newsletter-input {
+  width: 268px;
+  padding: 8px 10px;
+  border: 1px solid rgba(100,100,100,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  color: rgba(100,100,100,1);
+  background: white;
+  margin-bottom: 10px;
+}
+
+.newsletter-subscribe-button {
+  width: 104px;
+  padding: 8px 10px;
+  background: rgba(109,109,109,1);
+  color: white; /* Text color for button */
+  border: none;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: left;
+  color: rgba(37,37,37,1);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 59px;
+}
+
+/* Unused classes from original CSS, kept for reference */
+.name {
+  color: #fff;
+}

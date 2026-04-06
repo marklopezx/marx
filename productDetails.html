@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Gelasio&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Judson&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Homenaje&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/productDetails.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        /* Basic Styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            display: flex; /* Use flexbox to center content */
+            
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto; /* Removed to use flexbox centering */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 725px; /* Could be more specific, e.g., 500px */
+            height: 325px; /* Max width for larger screens */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            position: relative; /* For positioning the close button */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2{
+            font-size: 30px;
+            color: rgba(0,0,0,.50);
+        }
+
+        .close-button {
+            color: rgba(0,0,0,.50);
+            font-size: 40px;
+            /* font-weight: bold; */
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="v484_140">
+        <div class="nlinks">
+            <div>
+              <a href="index.html"><img src="./assets/images/v35_19.png" alt="logo" class="logo"></a>
+            </div>
+            <div>
+              <a href="index.html" class="nav-link">HOME</a>
+              <a href="about.html" class="nav-link">ABOUT</a>
+              <a href="contacts.html" class="nav-link">CONTACTS</a>
+            </div>
+            <div class="nav-icons">
+              <div class="search-box">
+                <input type="text" placeholder="Search..." class="search-input">
+      
+                <i class="fas fa-search search-icon icon"></i>
+              </div>
+              <a href="cart.html" class="icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" fill="currentColor">
+                  <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16l37.9 0c7.6 0 14.2 5.3 15.7 12.8l58.9 288c6.1 29.8 32.3 51.2 62.7 51.2L496 384c8.8 0 16-7.2 16-16s-7.2-16-16-16l-304.8 0c-15.2 0-28.3-10.7-31.4-25.6L152 288l314.6 0c29.4 0 55-20 62.1-48.5L570.6 71.8c5-20.2-10.2-39.8-31-39.8L99.1 32C92.5 13 74.4 0 53.9 0L16 0zm90.1 64l433.4 0L497.6 231.8C494 246 481.2 256 466.5 256l-321.1 0L106.1 64zM168 456a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zm80 0a56 56 0 1 0 -112 0 56 56 0 1 0 112 0zm200-24a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm0 80a56 56 0 1 0 0-112 56 56 0 1 0 0 112z"/>
+                </svg>
+              </a>
+              <a href="./signin.html" class="icon-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+                  <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+      <div class="v484_141"></div>
+      <span class="v486_234">5%</span><span class="v486_235">85%</span
+      ><span class="v486_236">10%</span><span class="v486_228">Small</span
+      ><span class="v486_229">True to size</span
+      ><span class="v486_230">Large</span
+      ><span class="v486_227">Product Ratings (2.8K)</span>
+      <div class="v484_213"></div>
+      <span class="v484_212">QUANTITY</span>
+      <div class="v484_142"></div>
+      <span class="v484_143">mlopez.</span
+      ><span class="v484_144"
+        >400 Uiversitty Drive Suite 200 Coral Gables, FL 33134 USA</span
+      ><span class="v484_145">Links</span><span class="v484_146">Home</span
+      ><span class="v484_147">Shop</span><span class="v484_148">About</span
+      ><span class="v484_149">Contact</span><span class="v484_150">Help </span
+      ><span class="v484_151">Payment Options</span
+      ><span class="v484_152">Returns</span
+      ><span class="v484_153">Privacy Policies</span
+      ><span class="v484_154">Newsletter</span
+      ><span class="v484_155">Enter Your Email Address</span
+      ><span class="v484_156">Subscribe</span>
+      <div class="name"></div>
+      <div class="name"></div>
+      <div class="name"></div>
+      <span class="v484_160">2025 All rights reserved</span>
+      <!-- <div class="v484_161"></div> -->
+      <!-- <span class="v484_162">CONTACTS</span><span class="v484_163">HOME</span
+      ><span class="v484_164">ABOUT</span>
+      <div class="v484_165"></div> -->
+      <div class="name"></div>
+      <!-- <div class="v484_167"></div>
+      <div class="v484_168"><div class="v484_169"></div></div> -->
+      <div class="v484_170"></div>
+      <span class="v484_171">Retro Patchwork Hipster</span>
+      <div class="v484_172"></div>
+      <div class="v484_173"></div>
+      <div class="v484_174"></div>
+      <div class="name"></div>
+      <div class="name"></div>
+      <div class="name"></div>
+      <span class="v486_223">4.8</span><span class="v474_176">Stock : 1</span
+      ><span class="v474_171">PHP 700.00</span
+      ><span class="v484_194">SIZE</span>
+      <div class="v484_195"></div>
+      <div class="v484_200"></div>
+      <div class="v484_201"></div>
+      <div class="v484_202"></div>
+      <div class="v484_203"></div>
+      <div class="v484_204"></div>
+      <span class="v484_206">XS</span><span class="v484_207">S</span
+      ><span class="v484_208">L</span><span class="v484_209">XL</span
+      ><span class="v484_210">XXL</span><span class="v484_211">3XL</span>
+      <div class="v484_215"><div class="v484_216"></div></div>
+      <div class="v484_218"><div class="v484_219"></div></div>
+      <span class="v484_220">0</span><span class="v484_222">REVIEWS</span>
+      <div class="v486_224">
+        <div class="v486_225"><div class="v486_226"></div></div>
+      </div>
+      <div class="v486_231"></div>
+      <div class="v486_237"></div>
+      <div class="v486_232"></div>
+      <div class="v486_233"></div>
+      <div class="v486_239"></div>
+      <div class="v486_238"></div>
+      <div class="v484_187"></div>
+      <span class="v484_188"><a href="productShippingtDetails.html" style="text-decoration: none;color:#fff;">Place Order</a></span>
+      <div class="v486_243"></div>
+      <span class="v486_244" id="openModalBtn">Add to cart</span>
+      <div class="v486_246">
+        <a href="javascript:history.back()" style="text-decoration: none;color: #000;font-size: 30px;"> &larr; </a>
+      </div>
+    </div>
+
+    
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Added to cart successfully!</h2>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-button")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "flex"; // Changed to flex for centering
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal content, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+  </body>
+</html>

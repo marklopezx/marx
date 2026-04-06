@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0; /* Added this for consistent body margin */
+}
+
+.main-container {
+  width: 100%;
+  height: 1244px; /* Ensure this height is sufficient to show the footer */
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-box1 {
+  width: 300px;
+  height: 376px;
+  background: linear-gradient(#9c9c9c, #312f2f);
+  opacity: 0.33;
+  position: absolute;
+  top: 399px;
+  left: 605px;
+}
+
+.background-box2 {
+  width: 300px;
+  height: 198px;
+  background: linear-gradient(#d9d9d9, #737373);
+  opacity: 0.44;
+  position: absolute;
+  top: 162px;
+  left: 605px;
+}
+
+.image-box1 {
+  width: 177px;
+  height: 412px;
+  background: url("../images/v47_9.png") no-repeat center center/cover;
+  position: absolute;
+  top: 380px;
+  left: 650px;
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.nlinks{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  background: #e3e3e3;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: #e3e3e3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  gap: 60px; /* Space between the original nav links */
+  padding-right: 50px; /* Space from the right edge for icons */
+  padding-left: 350px; /* Reset padding-left */
+}
+
+.nav-link {
+  font-family: Homenaje;
+  font-size: 20px;
+  color: #1e1d1d;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+/* NEW: Styles for the search bar and icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Space between search, cart, and profile */
+  margin-left: auto; /* Push icons to the far right */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  font-family: "Inria Serif";
+  font-size: 16px;
+  width: 120px; /* Adjust search input width */
+}
+
+.icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+svg path {
+  stroke: #000;          /* Outline color */
+  stroke-width: 5;       /* Thickness of the outline */
+  fill: 2;            /* Disable fill if you want only the stroke */
+  stroke-linecap: round; /* Optional: makes line ends rounded */
+  stroke-linejoin: round;/* Optional: smooth joins */
+}
+
+
+.icon-link {
+  font-size: 22px; /* Size of the cart and user icons */
+  color: #333; /* Color of the icons */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 637px;
+  height: 849px;
+  background: url("../images/v45_18.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 778px;
+}
+
+.cta-button {
+  width: 218px;
+  height: 63px;
+  background: #d9d7d7;
+  position: absolute;
+  top: 662px;
+  left: 99px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cta-text {
+  position: absolute;
+  top: 683px;
+  left: 145px;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  color: #4d3838;
+}
+
+.image-box2 {
+  width: 277px;
+  height: 277px;
+  background: url("../images/v46_3.png") no-repeat center center/cover;
+  position: absolute;
+  top: 145px;
+  left: 616px;
+}
+
+.logo{
+  width: 79px;
+  height: 67px;
+}
+
+.main-heading {
+  width: 451px;
+  position: absolute;
+  top: 230px;
+  left: 68px;
+  font-family: "IBM Plex Serif";
+  font-size: 40px;
+  color: #000;
+}
+
+.sub-heading {
+  width: 450px;
+  position: absolute;
+  top: 365px;
+  left: 66px;
+  font-family: "Inria Serif";
+  font-size: 24px;
+  color: #000;
+}
+
+.footer {
+  background: #f2f2f2;
+  padding: 40px 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  position: absolute;
+  width: 100%;
+  top: 988px;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.footer-column h4 {
+  font-family: Judson;
+  color: #959595;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-column a,
+.footer-column p {
+  font-family: Judson;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.brand-name {
+  font-family: Judson;
+  font-size: 20px;
+  font-weight: bold;
+  color: #383838;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-family: "Abhaya Libre";
+  font-size: 18px;
+  color: #6d6d6d;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-rights {
+  font-family: Judson;
+  font-size: 18px;
+  color: #252525;
+}
